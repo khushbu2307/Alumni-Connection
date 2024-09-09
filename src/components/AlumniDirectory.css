@@ -1,0 +1,62 @@
+.alumni-directory {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .alumni-directory h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1em;
+  }
+  
+  .alumni-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .alumni-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .alumni-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .alumni-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .alumni-date {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .alumni-journey {
+    font-size: 1em;
+    color: #333;
+  }
+  

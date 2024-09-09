@@ -1,0 +1,146 @@
+/* General styles for the container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('D:/allwebsites/alumni-association/src/components/education-background.jpg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 2rem;
+}
+
+/* Styles for the form wrapper */
+.auth-form-wrapper {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D effect */
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    transition: transform 0.3s;
+}
+
+.auth-form-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+/* Title styles */
+.auth-form-wrapper h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Form field styles */
+.auth-form-wrapper input[type="text"],
+.auth-form-wrapper input[type="email"],
+.auth-form-wrapper input[type="password"],
+.auth-form-wrapper input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.auth-form-wrapper input[type="text"]:focus,
+.auth-form-wrapper input[type="email"]:focus,
+.auth-form-wrapper input[type="password"]:focus,
+.auth-form-wrapper input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styles */
+.auth-form-wrapper button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-form-wrapper button:hover {
+    background: #0056b3;
+}
+
+/* Link styles */
+.auth-form-wrapper p {
+    margin-top: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.auth-form-wrapper span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-form-wrapper span:hover {
+    text-decoration: underline;
+}
+
+/* Toggle switch styles */
+.auth-form-wrapper .toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.auth-form-wrapper .toggle-container label {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Styles for Google and Facebook sign-up options */
+.auth-form-wrapper .social-signup {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-form-wrapper .social-signup a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-form-wrapper .social-signup a:hover {
+    text-decoration: underline;
+}
+
+.auth-form-wrapper .social-signup a svg {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Size of the icons */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .auth-form-wrapper {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .auth-form-wrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .auth-form-wrapper input,
+    .auth-form-wrapper button {
+        font-size: 0.875rem;
+    }
+}

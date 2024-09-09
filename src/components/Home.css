@@ -1,0 +1,322 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.image-container {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.background-image {
+    width: 1400px;
+    height: 700px;
+    align-items: center;
+    margin-left: 50px;
+    /*object-fit: cover;*/
+    filter: brightness(100%);
+    animation: rotateImage 2s ease-in-out forwards;
+}
+
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.get-started-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #2243bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+    background-color: #1b1c1e;
+}
+
+/* Slider container with larger box size */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Each box styling */
+.custom-box {
+    background-color: #1e1e1e;
+    padding: 50px;
+    width: 700px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-box:hover {
+    transform: translateY(-5px);
+}
+
+.box-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.box-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+}
+
+.box-link {
+    color: #00baff;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.box-link span {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* Slider controls */
+.slider-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #555;
+}
+
+/* General container for the section */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin: 50px 0;
+    background-color: #f9f9f9;
+}
+
+/* Left section with number, content, and image */
+.section-left {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-right: 20px;
+}
+
+.number-heading h1 {
+    font-size: 12rem;
+    color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: -90px;
+    line-height: 1.6;
+}
+
+.devices-image img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* Right section with the collapsible features list */
+.section-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.features-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.features-list li:after {
+    content: '▼';
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.features-list li.collapsed:after {
+    transform: rotate(-90deg);
+}
+
+/* Styling for the content and list items to be responsive */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .section-left, .section-right {
+        width: 100%;
+    }
+
+    .number-heading h1 {
+        font-size: 8rem;
+    }
+}
+
+
+/* Section where the image will be displayed */
+.image-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-section img {
+    width: 700px;
+    height: auto;
+    border: none;
+}
+
+
+/* Add these styles for the new alumni section */
+.alumni-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.alumni-text {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.alumni-text h2 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.alumni-image {
+    flex: 1;
+    text-align: center;
+}
+
+.alumni-image img {
+    width: 400px;
+    height: auto;
+}
+
+/* The rest of your existing styles remain unchanged */
+
+/* Slider container */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Adjusted margin */
+    width: 100%;
+}
+/* Add these styles for the new alumni section */
+.alumni-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    margin-top: 260px;
+}
+
+.alumni-text {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.alumni-text h2 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.alumni-image {
+    flex: 1;
+    text-align: center;
+}
+
+.alumni-image img {
+    width: 400px;
+    height: auto;
+}
+
+/* The rest of your existing styles remain unchanged */
+
+

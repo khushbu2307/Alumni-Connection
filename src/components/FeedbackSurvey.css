@@ -1,0 +1,77 @@
+.feedback-survey {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .event-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+  }
+  
+  .event-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .event-date, .event-location, .event-description {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .star.selected {
+    color: #f39c12; /* Yellow color for selected stars */
+  }
+  
+  .suggestion-box {
+    margin-top: 30px;
+  }
+  
+  .suggestion-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
